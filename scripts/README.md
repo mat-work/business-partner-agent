@@ -131,7 +131,7 @@ To terminate all ngrok tunnels you can use
 
 In your `.env` under `Security config` file set
 ```s
-BPA_SECURITY_ENABLED=true
+BPA_SECURITY_ENABLED=false
 ```
 and a username and password.
 
