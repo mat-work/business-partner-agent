@@ -33,7 +33,7 @@ done
 eval $(grep -i  'BPA_WEB_MODE' .env)
 
 if [[ "$BPA_WEB_MODE" = "" ]]; then
-    BPA_WEB_MODE=false
+    BPA_WEB_MODE=true
 fi
 
 echo "Web Mode: $BPA_WEB_MODE"
