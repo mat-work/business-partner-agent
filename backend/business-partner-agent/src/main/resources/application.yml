@@ -16,7 +16,7 @@ micronaut:
         file:
           cache-seconds: 60
   security:
-    enabled: ${BPA_SECURITY_ENABLED:true}
+    enabled: ${BPA_SECURITY_ENABLED:false}
     authentication: session
     endpoints:
       logout:
@@ -132,7 +132,7 @@ bpa:
   name: ${AGENT_NAME:`Business Partner Agent`}
   scheme: ${BPA_SCHEME:`https`}
   web:
-    only: ${BPA_WEB_MODE:false}
+    only: ${BPA_WEB_MODE:true}
   acapy:
     url: ${ACAPY_URL:`http://localhost:8031`}
     apiKey: ${ACAPY_API_KEY:empty}
