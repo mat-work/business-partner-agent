@@ -12,7 +12,8 @@ USER root
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install java 17.0.2-tem"
 
 ### QEMU (x86) and workspace kernel development tools
-RUN install-packages qemu qemu-system-x86 linux-image-$(uname -r) libguestfs-tools sshpass
+# RUN install-packages qemu qemu-system-x86 linux-image-$(uname -r) libguestfs-tools sshpass
+RUN install-packages qemu qemu-system-x86 libguestfs-tools sshpass
 
 ### Clang and LLVM
 RUN install-packages clang-7 llvm-7
